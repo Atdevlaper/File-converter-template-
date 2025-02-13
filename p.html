@@ -1,0 +1,196 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert various file formats including images, documents, videos, and audio seamlessly with our online tool.">
+    <meta name="keywords" content="file converter, image converter, document converter, video converter, audio converter, online file conversion">
+    <title>Aditya Tiwari's Format Converter Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Aditya Tiwari</div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="converter">
+            <h1>File Format Converter</h1>
+            <form id="converterForm">
+                <div class="form-group">
+                    <label for="fileInput">Upload Files:</label>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="formatSelect">Select Output Format:</label>
+                    <select id="formatSelect">
+                        <optgroup label="Image Formats">
+                            <option value="png">PNG</option>
+                            <option value="jpeg">JPEG</option>
+                            <option value="gif">GIF</option>
+                            <option value="bmp">BMP</option>
+                            <option value="tiff">TIFF</option>
+                        </optgroup>
+                        <optgroup label="Document Formats">
+                            <option value="pdf">PDF</option>
+                            <option value="ppt">PPT</option>
+                            <option value="html">HTML</option>
+                            <option value="docx">DOCX</option>
+                            <option value="xlsx">XLSX</option>
+                        </optgroup>
+                        <optgroup label="Video Formats">
+                            <option value="mp4">MP4</option>
+                            <option value="avi">AVI</option>
+                            <option value="mov">MOV</option>
+                            <option value="wmv">WMV</option>
+                            <option value="flv">FLV</option>
+                        </optgroup>
+                        <optgroup label="Audio Formats">
+                            <option value="mp3">MP3</option>
+                            <option value="wav">WAV</option>
+                            <option value="aac">AAC</option>
+                            <option value="flac">FLAC</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="qualitySelect">Select Output Quality:</label>
+                    <select id="qualitySelect">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+                <button type="button" id="convertButton">Convert</button>
+            </form>
+            <div id="fileInfo"></div>
+            <div id="previewSection"></div>
+        </section>
+
+        <!-- Article Section -->
+        <section class="article">
+            <h2>About Our Format Converter Tool</h2>
+            <p>Our format converter tool allows you to seamlessly convert a wide range of file formats, including images, documents, videos, and audio files. With support for batch conversions and customizable output quality, managing your files has never been easier.</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Which file formats are supported?</h3>
+                <p>We support various formats including PNG, JPEG, GIF, BMP, TIFF for images; PDF, PPT, HTML, DOCX, XLSX for documents; MP4, AVI, MOV, WMV, FLV for videos; and MP3, WAV, AAC, FLAC for audio files.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a limit to the number of files I can convert at once?</h3>
+                <p>No, you can select multiple files for batch conversion without any limitations.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I choose the output quality?</h3>
+                <p>You can select the desired output quality (High, Medium, Low) from the dropdown menu before initiating the conversion.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025-2026 Aditya Tiwari. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html><style>/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+/* Converter Section */
+.converter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Article Section */
+.article {
+    margin-top: 40px;
+}
+
+/* FAQ Section */
+.faq {
+    margin-top: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}</style><script>document.getElementById('convertButton').addEventListener('click', async () => {
+    const files = document.getElementById('fileInput').files;
+    const
+::contentReference[oaicite:0]{index=0}</script>
